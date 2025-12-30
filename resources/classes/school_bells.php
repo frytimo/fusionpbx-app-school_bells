@@ -1,6 +1,5 @@
 <?php
 
-
 class school_bells {
 	/**
 	 * declare constant variables
@@ -55,6 +54,10 @@ class school_bells {
 		$this->uuid_prefix = 'school_bell_';
 		$this->toggle_field = 'school_bell_enabled';
 		$this->toggle_values = ['true','false'];
+	}
+
+	public static function get_service_name() {
+		return 'school_bells';
 	}
 
 	/**
