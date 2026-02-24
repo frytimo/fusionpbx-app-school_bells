@@ -31,9 +31,7 @@
 	require_once "resources/check_auth.php";
 
 // check permissions
-	if (permission_exists('school_bell_edit') || permission_exists('school_bell_add')) {
-		// access granted
-	} else {
+	if (!(permission_exists('school_bell_edit') || permission_exists('school_bell_add'))) {
 		echo "access denied";
 		exit;
 	}
